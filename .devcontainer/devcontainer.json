@@ -1,0 +1,16 @@
+{
+  "name": "Social Discovery App",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "forwardPorts": [
+    8080
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "Social Discovery App",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postAttachCommand": "bash scripts/preview.sh",
+  "postCreateCommand": "bash scripts/setup.sh"
+}

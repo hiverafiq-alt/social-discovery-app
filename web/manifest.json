@@ -1,0 +1,17 @@
+{
+  "name": "Social Discovery Mobile Preview",
+  "short_name": "Discovery",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#090711",
+  "theme_color": "#090711",
+  "description": "Private studio preview of the Social Discovery mobile interface.",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Explore the Social Discovery mobile interface in your browser. Private studio preview with fictional profiles and no real payments.">
+  <meta name="theme-color" content="#090711">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Social Discovery">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <title>Social Discovery · Mobile Preview</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;background:#090711;color:#f8f4fc}
+    #boot{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;font:14px system-ui,sans-serif;background:#090711;z-index:2}
+    #boot svg{width:80px;height:80px}#boot p{color:#b8b1c6;letter-spacing:.12em;font-size:11px;text-transform:uppercase}
+    @media(prefers-reduced-motion:no-preference){#boot svg{animation:breathe 2s ease-in-out infinite}@keyframes breathe{50%{opacity:.55;transform:translateY(-4px)}}}
+  </style>
+</head>
+<body>
+  <div id="boot" role="status" aria-label="Loading Social Discovery preview">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="38" cy="43" r="23" fill="#c3a3ff"/><circle cx="64" cy="60" r="23" fill="#f4c5e9"/></svg>
+    <p>A hello worth remembering</p>
+  </div>
+  <script>window.addEventListener('flutter-first-frame',function(){document.getElementById('boot')?.remove();});</script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
